@@ -1703,7 +1703,7 @@ public abstract class BDDFactory {
     
     protected static void bdd_default_gbchandler(boolean pre, GCStats s) {
         if (!pre) {
-            System.err.println(s.toString());
+            //System.err.println(s.toString());
         }
     }
     
@@ -1726,13 +1726,13 @@ public abstract class BDDFactory {
         int verbose = 1;
         if (verbose > 0) {
             if (prestate) {
-                System.out.println("Start reordering");
+                //System.out.println("Start reordering");
                 s.usednum_before = getNodeNum();
                 s.time = System.currentTimeMillis();
             } else {
                 s.time = System.currentTimeMillis() - s.time;
                 s.usednum_after = getNodeNum();
-                System.out.println("End reordering. "+s);
+                //System.out.println("End reordering. "+s);
             }
         }
     }
