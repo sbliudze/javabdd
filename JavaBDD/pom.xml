@@ -90,11 +90,15 @@
     </developer>
   </developers>
   <dependencies>
+
     <dependency>
-      <groupId>jdd</groupId>
-      <artifactId>jdd</artifactId>
-      <version>1.00</version>
+        <groupId>jdd</groupId>
+        <artifactId>jdd</artifactId>
+        <version>1.0.0</version>
+        <scope>system</scope>
+        <systemPath>${basedir}/jdd.jar</systemPath>
     </dependency>
+
     <!-- TODO
     <dependency>
       <groupId>maven</groupId>
@@ -120,25 +124,24 @@
   <build>
     <sourceDirectory>.</sourceDirectory>
     <!-- Unit test cases -->
-  
     <!-- J A R  R E S O U R C E S -->
     <!-- Resources that are packaged up inside the JAR file -->
     <!-- Integration unit test cases -->
-
-		<plugins>
-<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<configuration>
-					<includes>
- 			<include>**/*Test.java</include>
-        <include>**/*Tests.java</include>
-        <include>regression/*.java</include>
- 					</includes>
-				</configuration>
-			</plugin>
-		</plugins>
+	<plugins>
+	  <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-surefire-plugin</artifactId>
+		<configuration>
+		  <includes>
+ 		    <include>**/*Test.java</include>
+		    <include>**/*Tests.java</include>
+		    <include>regression/*.java</include>
+ 		  </includes>
+		</configuration>
+	 </plugin>
+	</plugins>
   </build>
+
   <reports>
     <report>
       maven-developer-activity-plugin
