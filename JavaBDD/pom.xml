@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
   <modelVersion>4.0.0</modelVersion>
- 
+  
+  <groupId>org.javabip</groupId>
   <artifactId>javabdd</artifactId>
   <name>JavaBDD</name>
-  <groupId>javabdd</groupId>
+
   <version>1.0b2</version>
   <organization>
     <name>John Whaley</name>
@@ -35,60 +36,14 @@
 	variable reordering.&lt;/p&gt;
      
   </description>
-  <url>http://javabdd.sourceforge.net/</url>
-    <scm>
+	<!--TODO change to github-->
+    
+   <scm>
     <connection>scm:cvs:pserver:anonymous@cvs.sourceforge.net:/cvsroot/javabdd:JavaBDD</connection>
     <developerConnection>scm:cvs:ext:joewhaley@cvs.sourceforge.net:/cvsroot/javabdd:JavaBDD</developerConnection>
     <url>http://cvs.sourceforge.net/viewcvs.py/javabdd/</url>
     </scm>
 
-  <mailingLists>
-    <mailingList>
-      <name>JavaBDD Announce List</name>
-      <subscribe>
-        http://lists.sourceforge.net/lists/listinfo/javabdd-announce
-      </subscribe>
-      <unsubscribe>
-        http://lists.sourceforge.net/lists/listinfo/javabdd-announce
-      </unsubscribe>
-      <archive>
-        http://sourceforge.net/mailarchive/forum.php?forum=javabdd-announce
-      </archive>
-    </mailingList>
-    <mailingList>
-      <name>JavaBDD Developer List</name>
-      <subscribe>
-        http://lists.sourceforge.net/lists/listinfo/javabdd-devel
-      </subscribe>
-      <unsubscribe>
-        http://lists.sourceforge.net/lists/listinfo/javabdd-devel
-      </unsubscribe>
-      <archive>
-        http://sourceforge.net/mailarchive/forum.php?forum=javabdd-devel
-      </archive>
-    </mailingList>
-    <mailingList>
-      <name>JavaBDD CVS Checkins List</name>
-      <subscribe>
-        http://lists.sourceforge.net/lists/listinfo/javabdd-checkins
-      </subscribe>
-      <unsubscribe>
-        http://lists.sourceforge.net/lists/listinfo/javabdd-checkins
-      </unsubscribe>
-      <archive>
-        http://sourceforge.net/mailarchive/forum.php?forum=javabdd-checkins
-      </archive>
-    </mailingList>
-  </mailingLists>
-  <developers>
-    <developer>
-      <name>John Whaley</name>
-      <id>joewhaley</id>
-      <email>joewhaley@users.sourceforge.net</email>
-      <organization>Stanford University</organization>
-      <timezone>-8</timezone>
-    </developer>
-  </developers>
   <dependencies>
 
     <dependency>
@@ -99,21 +54,6 @@
         <systemPath>${basedir}/jdd.jar</systemPath>
     </dependency>
 
-    <!-- TODO
-    <dependency>
-      <groupId>maven</groupId>
-      <artifactId>maven-native-plugin</artifactId>
-      <version>1.1</version>
-      <url>http://www.ibiblio.org/maven/maven/plugins/</url>
-    </dependency>
-    
-    <dependency>
-      <groupId>buddy</groupId>
-      <artifactId>buddy</artifactId>
-      <version>2.4</version>
-      <url>http://buddy.sourceforge.net/</url>
-    </dependency>
--->
     <dependency>
       <groupId>statcvs</groupId>
       <artifactId>maven-statcvs-plugin</artifactId>
@@ -142,58 +82,5 @@
 	</plugins>
   </build>
 
-  <reports>
-    <report>
-      maven-developer-activity-plugin
-    </report>
-    <report>
-      maven-faq-plugin
-    </report>
-    <report>
-      maven-file-activity-plugin
-    </report>
-    <report>
-      maven-jdepend-plugin
-    </report>
-    <report>
-      maven-javadoc-plugin
-    </report>
-    <report>
-      maven-jxr-plugin
-    </report>
-    <report>
-      maven-junit-report-plugin
-    </report>
-    <report>
-      maven-findbugs-plugin
-    </report>
-    <report>
-      maven-linkcheck-plugin
-    </report>
-    <report>
-      maven-statcvs-plugin
-    </report>
-    <report>
-      maven-changes-plugin
-    </report>
-    <!-- TOO EXPENSIVE
-    <report>
-      maven-checkstyle-plugin
-    </report>
-    <report>
-      maven-pmd-plugin
-    </report>
-    <report>
-      maven-simian-plugin
-    </report>
--->
-  </reports>
-
-<repositories>
-    <repository>
-        <id>local-maven-repo</id>
-        <url>file://${project.basedir}</url>
-    </repository>
-</repositories>
 </project>
 
