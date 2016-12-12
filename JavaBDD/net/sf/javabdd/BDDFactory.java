@@ -1748,7 +1748,7 @@ public abstract class BDDFactory {
     protected static void bdd_default_reshandler(int oldsize, int newsize) {
         int verbose = 1;
         if (verbose > 0) {
-            System.out.println("Resizing node table from "+oldsize+" to "+newsize);
+            //System.out.println("Resizing node table from "+oldsize+" to "+newsize);
         }
     }
     
